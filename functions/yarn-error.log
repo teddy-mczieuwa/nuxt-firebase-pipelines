@@ -1,0 +1,36 @@
+Arguments: 
+  /home/teddy/.nvm/versions/node/v6.11.5/bin/node /usr/share/yarn/bin/yarn.js init
+
+PATH: 
+  /home/teddy/.nvm/versions/node/v6.11.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/teddy/Android/sdk/:/home/teddy/Android/sdk/platform-tools/:/usr/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/Documents/Android/android-sdk-linux/tools:/home/Documents/Android/android-sdk-linux/platform-tools:/home/teddy/Android/Sdk/tools:/home/teddy/Android/sdk/:/home/teddy/Android/sdk/platform-tools/:/usr/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/Documents/Android/android-sdk-linux/tools:/home/Documents/Android/android-sdk-linux/platform-tools:/home/teddy/Android/Sdk/tools:/home/teddy/Android/sdk/:/home/teddy/Android/sdk/platform-tools/
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  6.11.5
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:131036:13)
+      at emitNone (events.js:86:13)
+      at Interface.emit (events.js:185:7)
+      at Interface._ttyWrite (readline.js:724:16)
+      at ReadStream.onkeypress (readline.js:119:10)
+      at emitTwo (events.js:106:13)
+      at ReadStream.emit (events.js:191:7)
+      at emitKeys (internal/readline.js:389:14)
+      at next (native)
+      at ReadStream.onData (readline.js:970:36)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,33 @@
+{
+  "name": "teddymczieuwa",
+  "version": "1.0.0",
+  "repository": "https://mczieuwa@bitbucket.org/mczieuwa/teddymczieuwa.com.git",
+  "author": "Teddy <teddymczieuwa@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "hello": "echo HI THERE",
+    "dev": "cd \"src\" && yarn dev",
+
+    "build": "yarn setup && yarn clean && yarn build:nuxt && yarn copy:public",
+    "build:nuxt": "cd \"src\" && yarn build",
+
+    "predeploy":"yarn build",
+    "deploy:firebase":"firebase deploy",
+    "deploy": "yarn predeploy && yarn deploy:firebase",
+
+    "copy:public": "cp -R \"functions/nuxt/dist/\" \"public\"",
+
+    "setup": "yarn install && yarn setup:src && yarn setup:functions",
+    "setup:src": "cd \"src\" && yarn install",
+    "setup:functions": "cd \"functions\" && yarn install",
+
+    "clean": "yarn clean:public && yarn clean:functions",
+    "clean:functions": "rimraf \"functions/dist/nuxt\"",
+    "clean:public": "rimraf \"public/\"",
+    "clean:node": "rimraf \"functions/node_modules\" && rimraf \"src/node_modules\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.6.2"
+  }
+}
